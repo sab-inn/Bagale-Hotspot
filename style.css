@@ -1,4 +1,8 @@
-
+.body{
+    width: 0px;
+    height: 0px;
+    box-sizing: border-box;
+}
 
 .wrapper{
     display: flex;
@@ -346,12 +350,10 @@ body{
   
    
   .bg{
-    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../Images/bgimg.jpg);
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(./Images/bgimg.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    width: 198vh;
-    height: 100vh;
   }
   *{
     margin:0;

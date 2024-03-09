@@ -181,4 +181,5 @@ form p a{
 .btn-field button.disable{
     background: #eaeaea;
     color: #555;
+    display: none;
     }
