@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <script src="https://kit.fontawesome.com/6b7e5fcefd.js" crossorigin="anonymous"></script>
          <link rel="stylesheet" href="style.css">
+         <script src="script.js"></script>
     </head>
     <body>
         <div class="bg">
@@ -35,7 +36,7 @@
         <div class="container">
             
             <div class="form-box">
-                <span>&times;</span>
+                <span onclick="closeModel()">X</span>
              <h1 id="title">Sign In</h1>
                 <form>
                     <div class="input-group">
@@ -63,42 +64,6 @@
             </div>
         </div>
           </div>
-        
-        <script>
-
-            let signinBtn = document.getElementById("signinBtn");
-            let loginBtn = document.getElementById("logininBtn");
-            let nameField = document.getElementById("nameField");
-            let title = document.getElementById("title");
-    
-            logininBtn.onclick = function(){
-                nameField.style.maxHeight = "0";
-                title.innerHTML= "Login ";
-                signinBtn.classList.add("disable");
-                logininBtn.classList.remove("disable");
-    
-            }
-            signinBtn.onclick = function(){
-                nameField.style.maxHeight = "60px";
-                title.innerHTML= "Sign In";
-                signinBtn.classList.remove("disable");
-                logininBtn.classList.add("disable");
-    
-            }
-            
-         </script>
-          <script>
-            function showModel(){
-                document.querySelector('.overlay').classList.add('showoverlay')
-                document.querySelector('.form-box').classList.add('showform-box')
-            }
-            function closeModel(){
-                document.querySelector('.overlay').classList.remove('showoverlay')
-                document.querySelector('.form-box').classList.remove('showform-box')
-            }
-            var c=document.querySelector("span")
-            c.addEventListener("click",closeModel)
-        </script>
         <section class="footer">
             <div class="social">
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
